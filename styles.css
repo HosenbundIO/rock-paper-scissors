@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #24272e;
+  color: white;
+  font-family: "Sixtyfour", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  padding: 20px;
+}
+
+header > h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.score-board {
+  border: 3px solid white;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  margin: 50px auto;
+  color: white;
+  font-size: 2rem;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.label {
+  background: lawngreen;
+  padding: 2px;
+  color: white;
+  font-size: 14px;
+}
+
+#player {
+  position: absolute;
+  top: 25px;
+  left: -20px;
+}
+
+#computer {
+  position: absolute;
+  top: 25px;
+  right: -20px;
+}
+
+#choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#choices > button {
+  font-size: 7.5rem;
+  min-width: 160px;
+  background: #e4ebe5;
+  border-radius: 150px;
+  border: lawngreen 5px solid;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.choices > button:hover {
+  background-color: #a4aba6;
+}
+
+.result {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.result > p {
+  margin-top: 150px;
+}
+
+.resultingScore {
+  font-size: 3rem;
+}

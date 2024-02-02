@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='index.js'></script>
-</head>
-<body>
-    
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Rock Paper Scissors Game</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <header><h1>Rock Paper Scissors</h1></header>
+
+      <div class="score-board">
+        <div id="player" class="label">You</div>
+        <div id="computer" class="label">KI</div>
+        <span id="playerScore">0</span>:<span id="computerScore">0</span>
+      </div>
+
+      <div id="choices">
+        <button onclick="playRound(this, 'rock')">✊</button>
+        <button onclick="playRound(this, 'paper')">✋</button>
+        <button onclick="playRound(this, 'scissors')">✌️</button>
+      </div>
+
+      <div class="result">
+        <div>
+          <span id="playerResult" class="resultingScore"></span>vs.<span
+            id="computerResult"
+            class="resultingScore"
+          ></span>
+        </div>
+        <p id="result"></p>
+      </div>
+    </main>
+  </body>
 </html>
